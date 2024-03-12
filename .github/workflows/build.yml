@@ -13,7 +13,7 @@ jobs:
       image: archlinux/base:latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout linux-tkg-polaris-vega 
       uses: actions/checkout@v2
 
     - name: Install dependencies
