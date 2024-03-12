@@ -1,4 +1,4 @@
-name: Build Package
+name: Build Kernel Package
 
 on:
   push:
@@ -13,11 +13,15 @@ jobs:
       image: archlinux/base:latest
 
     steps:
-    - name: Install dependencies
-      run: |
-        pacman -Syu --noconfirm base-devel
-
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Build package
+    - name: Install dependencies
+      run: |
+        pacman -Syu --noconfirm base-devel linux-headers
+
+    - name: Build kernel package
+      run: |
+        cd path/to/kernel/repository
+        makepkg -si --noconfirm
+
