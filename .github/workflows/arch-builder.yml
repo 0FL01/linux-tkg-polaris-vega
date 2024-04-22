@@ -8,8 +8,8 @@ on:
 
 
 env:
-  _waydroid: "true"
-  _processor_opt: "generic"
+  _waydroid: "false"
+  _processor_opt: "zver3"
   _git_mirror: "github.com"
   PKGDEST: "/tmp/linux-tkg"
   _debugdisable: "true"
