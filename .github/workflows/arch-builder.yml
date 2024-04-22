@@ -9,7 +9,7 @@ on:
 
 env:
   _waydroid: "false"
-  _processor_opt: "zver3"
+  _processor_opt: "zen3"
   _git_mirror: "github.com"
   PKGDEST: "/tmp/linux-tkg"
   _debugdisable: "true"
